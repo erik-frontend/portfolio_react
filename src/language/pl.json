@@ -1,0 +1,63 @@
+{
+    "nav": {
+      "about": "O mnie",
+      "skills": "Umiejętności",
+      "portfolio": "Portfolio",
+      "contact": "KONTAKT"
+    },
+    "hero": {
+      "name": "nazywam się Tomasz",
+      "title": "JESTEM DEV'EM"
+    },
+    "itBerries": {
+      "title": "IT BERRIES",
+      "description": "Jestem jednym z członków koła naukowego skupiającego fascynatów internetu i nowych technologii. W ITberries zajmujemy się projektowaniem i tworzeniem stron internetowych, jak i aplikacji. Oprócz projektów, naszym największym przedsięwzięciem jest konferencja Clemna Strona UX, którą organizujemy już szósty raz. Praca w kole na stanowisku Front End Developer'a zdecydowanie rozwinęła moje umiejętności pracy w grupie, jak i pracy pod presją czasu. Jeśli chcesz dowiedzieć się więcej o kole, kliknij w poniższy przycisk.",
+      "more": "WIĘCEJ"
+    },
+    "aboutMe": {
+      "title": "O MNIE",
+      "description": "Nazywam się Tomasz Gajda, jestem studentem trzeciego roku informatyki stosowanej na Akademii Górniczo-Hutniczej w Krakowie. Od roku uczę się technologii Front End i jestem pewny, że jest to moje miejsce w branży. Członkostwo w kole naukowym rozwinęło moje umiejętności projektowe, które szybko przerodziły się w nowe hobby. Biegle posługuję się językiem angielskim (w mowie i piśmie) oraz znam język hiszpański w stopniu średniozaawansowanym. Poza projektowaniem i programowaniem stron internetowych, moją pasją są wszelkiego rodzaju sporty motorowe - od rajdów po samego króla motorsportu - Formułę 1.",
+      "more": "WIĘCEJ",
+      "design": {
+        "title": "PROJEKT",
+        "description": "Mogę zaprojektować stronę na podstawie Twoich potrzeb i sugestii. Mogę również stworzyć ją od podstaw, konsultując się z Tobą w trakcie pracy."
+      },
+      "development": {
+        "title": "PROGRAMOWANIE",
+        "description": "Na podstawie stworzonego przeze mnie lub podesłanego projektu, mogę zaprogramować stronę by była w pełni funkcjonalna i responsywna."
+      },
+      "maintenance": {
+        "title": "KONSERWACJA",
+        "description": "W razie wszelkich problemów lub potrzeby zmian, mogę wprowadzić nowe funkcjonalności..."
+      },
+      "skills": {
+        "title": "UMIEJĘTNOŚCI",
+        "usingNow": "KORZYSTAM:",
+        "learning": "UCZĘ SIĘ:",
+        "other": "INNE:"
+      }
+    },
+    "portfolio": {
+      "title": "PORTFOLIO",
+      "all": "WSZYSTKIE",
+      "coded": "PROGRAMOWANE",
+      "designed": "PROJEKTOWANE",
+      "eatsome": {
+        "description": "Przeglądanie restauracji w React.js (korzystając z Yelp API)",
+        "demo": "DEMO",
+        "info": "INFO"
+      }
+    },
+    "contact": {
+      "title": "KONTAKT",
+      "moreToCome": "I wiele więcej w drodze!",
+      "description": "Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.",
+      "name": "WPROWADŹ IMIĘ",
+      "email": "WPROWADŹ EMAIL",
+      "phone": "NUMER TELEFONU",
+      "message": "TWOJA WIADOMOŚĆ",
+      "submit": "WYŚLIJ",
+      "backToTop": "POWRÓT NA GÓRĘ",
+      "copyright": "@2020 Tomasz Gajda Wszelkie prawa zastrzeżone."
+    }
+  }
