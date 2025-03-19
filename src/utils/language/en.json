@@ -1,5 +1,9 @@
 {
-    "nav": {
+  "header": {
+    "title": "I am a Developer",
+    "subtitle": "My name is Erik"
+  },  
+  "navigation": {
       "about": "About me",
       "skills": "Skills",
       "portfolio": "Portfolio",
