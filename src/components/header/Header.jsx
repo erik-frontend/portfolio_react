@@ -8,6 +8,8 @@ const Header = () => {
 
     const { t, i18n } = useTranslation()
 
+    const LinkParams = {smooth:true, duration:500}
+
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang)
     } 
@@ -19,16 +21,16 @@ const Header = () => {
             <nav className='nav'>
                 <ul className="menu">
                     <li className="item">
-                        <Link to='about' smooth={true} duration={500}>{t("navigation.about")}</Link>
+                        <Link to='about' {...LinkParams}>{t("navigation.about")}</Link>
                     </li>
                     <li className="item">
-                        <Link to='skills'>{t("navigation.skills")}</Link>
+                        <Link to='skills' {...LinkParams}>{t("navigation.skills")}</Link>
                     </li>
                     <li className="item">
-                        <Link to='portfolio'>{t("navigation.portfolio")}</Link>
+                        <Link to='portfolio' {...LinkParams}>{t("navigation.portfolio")}</Link>
                     </li>
                     <li className="item">
-                        <Link to='contact'>{t("navigation.contact")}</Link>
+                        <Link to='contact' {...LinkParams}>{t("navigation.contact")}</Link>
                     </li>
                 </ul>
                 <div className="language-switcher">
