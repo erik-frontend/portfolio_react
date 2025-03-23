@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./header.scss"
 import { Link } from 'react-scroll'
 import Logo from './Logo'
@@ -6,12 +6,15 @@ import { useTranslation } from 'react-i18next'
 
 const Header = () => {
 
+    const [language, setLanguage] = useState(true)
+
     const { t, i18n } = useTranslation()
 
     const LinkParams = {smooth:true, duration:500}
 
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang)
+        setLanguage(!language)
     } 
 
   return (
@@ -34,8 +37,8 @@ const Header = () => {
                     </li>
                 </ul>
                 <div className="language-switcher">
-                    <button onClick={() => changeLanguage("en")}>en</button>
-                    <button onClick={() => changeLanguage("pl")}>pl</button>
+                    <button className={`${language === true ? "active" : ""}`}  onClick={() => changeLanguage("en")}>en</button>
+                    <button className={`${language === true ? "active" : ""}`} onClick={() => changeLanguage("pl")}>pl</button>
                 </div>
             </nav>
         </div>

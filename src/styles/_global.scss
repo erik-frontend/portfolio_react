@@ -13,6 +13,12 @@ ul {
     list-style: none;
 }
 
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
 body {
     font-family: 'Montserrat-Medium';
     font-family: 'Raleway-ExtraBold';
@@ -22,6 +28,7 @@ body {
 .container {
     max-width: 1375px;
     width: 100%;
+    margin: 0 auto;
 
     @media (max-width: 1400px) {
         padding: 0 15px;

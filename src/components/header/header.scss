@@ -1,7 +1,9 @@
+@use "../../styles/varibles"as *;
+
 .header {
     position: fixed;
     width: 100%;
-    padding: 15px 0;
+    padding-top: 65px;
 
     .container {
         display: flex;
@@ -11,12 +13,53 @@
 
     .menu {
         display: flex;
-        gap: 98px;
+        gap: 8px;
     }
 
     .nav {
         display: flex;
         gap: 98px;
+        align-items: center;
+
+        a {
+            text-transform: capitalize;
+            border-radius: 30px;
+            width: 147px;
+            height: 46px;
+            display: block;
+            background: transparent;
+            color: $black;
+            padding: 10px 0;
+            font-family: "Montserrat-Bold";
+            font-weight: 700;
+            font-size: 15px;
+            text-align: center;
+
+            &.active {
+                background: $white;
+                color: $black;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .language-switcher {
+        display: flex;
+        gap: 10px;
+
+        button {
+            padding: 10px;
+            font-family: "Montserrat-Bold";
+            font-weight: 700;
+            font-size: 15px;
+            text-align: center;
+            text-transform: uppercase;
+
+            &.active {
+                border: 1px solid hsla(240, 7%, 62%, 1);
+                box-shadow: 4px 4px 5px 0 #ccc;
+            }
+        }
     }
 
     .logo svg {
