@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 
 const Header = () => {
 
-    const [language, setLanguage] = useState(true)
+    const [language, setLanguage] = useState("en")
 
     const { t, i18n } = useTranslation()
 
@@ -14,7 +14,7 @@ const Header = () => {
 
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang)
-        setLanguage(!language)
+        setLanguage(lang)
     } 
 
   return (
@@ -37,8 +37,8 @@ const Header = () => {
                     </li>
                 </ul>
                 <div className="language-switcher">
-                    <button className={`${language === true ? "active" : ""}`}  onClick={() => changeLanguage("en")}>en</button>
-                    <button className={`${language === true ? "active" : ""}`} onClick={() => changeLanguage("pl")}>pl</button>
+                    <button className={`${language === "en" ? "active" : ""}`}  onClick={() => changeLanguage("en")}>en</button>
+                    <button className={`${language === "pl" ? "active" : ""}`} onClick={() => changeLanguage("pl")}>pl</button>
                 </div>
             </nav>
         </div>
