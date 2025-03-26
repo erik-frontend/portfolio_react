@@ -1,0 +1,48 @@
+@use "../../styles/varibles" as *;
+@use "../../styles/mixin" as *;
+
+.home-section {
+    width: 100%;
+    height: 100vh;
+    background: $gray-silver;
+    position: relative;
+    overflow: hidden;
+
+    .home-wrapper {
+        display: flex;
+        height: 100%;
+    }
+
+    .home-left {
+        flex: 1;
+        background: $gray-silver;
+    }
+
+    .home-right {
+        flex: 1;
+        position: relative;
+        background: $black;
+        clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0 100%);
+    }
+
+    .home-content {
+        position: absolute;
+        top: 350px;
+        left: 0;
+        width: 100%;
+    }
+
+    .title {
+        @include font("Raleway-Bold", 700, 40px);
+        margin-bottom: 54px;
+    }
+
+    .name-title {
+        @include font("Raleway-Bold", 700, 80px);
+    }
+
+    .subTitle {
+        @include font("Raleway-ExtraBold", 800, 25px);
+        color: $gray-500;
+    }
+}
