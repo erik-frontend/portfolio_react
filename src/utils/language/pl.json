@@ -1,7 +1,8 @@
 {
-  "header": {
-    "title": "Jestem Dev'em",
-    "subtitle": "Nazywam się Erik"
+  "home": {
+    "title": "Cześć, jestem",
+    "name": "Erik Gorodyskyy",
+    "subtitle": "Front-end React programistą"
   },
   "navigation": {
     "about": "O mnie",

@@ -19,39 +19,51 @@
     }
 
     .home-right {
+        display: flex;
         flex: 1;
         position: relative;
         background: $black;
         clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0 100%);
-        
+
     }
 
     .home-content {
         position: absolute;
-        top: 350px;
+        top: 50%;
+        transform: translateY(-50%);
         left: 0;
         width: 100%;
     }
-    
-.home-img {
-    position: absolute;
-    right: 20px;
-    height: auto;
-}
-
- 
 
     .title {
-        @include font("Raleway-Bold", 700, 40px);
+        @include font("Raleway-Bold", 700, 40px, 1.2);
         margin-bottom: 54px;
     }
 
     .name-title {
-        @include font("Raleway-Bold", 700, 80px);
+        @include font("Raleway-Bold", 700, 70px);
     }
 
     .subTitle {
         @include font("Raleway-ExtraBold", 800, 25px);
         color: $gray-500;
+        margin-bottom: 125px;
+        display: block;
+    }
+
+    .home-social {
+        display: flex;
+        gap: 30px;
+    }
+
+    .home-social-link {
+        width: 61px;
+        height: 56px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background: $gray-200;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

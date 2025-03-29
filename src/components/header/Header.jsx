@@ -5,6 +5,8 @@ import Logo from './Logo'
 import { useTranslation } from 'react-i18next'
 
 const Header = () => {
+    
+    const [sticky, setSticky] = useState(false);
 
     const [language, setLanguage] = useState("en")
 
@@ -17,8 +19,14 @@ const Header = () => {
         setLanguage(lang)
     } 
 
+    const isSticky = () => {
+        const scrollTop = window.scrollY;
+        const stickyClass = scrollTop >= 107 ? "fixed" : "";
+        setSticky(stickyClass);
+      };
+
   return (
-    <header className='header'>
+    <header className={`header ${window.scrollY >= 10 ? "fixed" : ""}`}>
         <div className="container">
             <Logo/>
             <nav className='nav'>

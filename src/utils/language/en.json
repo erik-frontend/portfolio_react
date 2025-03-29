@@ -1,7 +1,8 @@
 {
-  "header": {
-    "title": "I am a Developer",
-    "subtitle": "My name is Erik"
+  "home": {
+    "title": "Hi, I am",
+    "name": "Erik Gorodyskyy",
+    "subtitle": "Front-end React Developer"
   },  
   "navigation": {
       "about": "About me",
