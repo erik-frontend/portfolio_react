@@ -39,7 +39,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="block" style={{height: "500px"}}></div>
         </section>
     )
 }
