@@ -3,12 +3,28 @@ import "./styles/main.scss"
 import Header from "./components/header/Header"
 import Home from "./components/home/Home"
 import About from "./components/about/About"
+import { useEffect, useState } from "react"
 
 function App() {
+
+  const [sticky, setSticky] = useState(false);
+
+  useEffect(() => {
+      
+      const handleScroll = () => {
+          if (window.scrollY > 1) setSticky(true)
+          else setSticky(false)
+      }
+
+
+      window.addEventListener("scroll", handleScroll)
+      return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   return (
     <>
-      <Header/>
-      <Home/>
+      <Header sticky={sticky}/>
+      <Home sticky={sticky}/>
       <About/>
     </>
   )

@@ -6,7 +6,7 @@ import "./home.scss"
 import homeImage from "../../assets/img/HomeImage.png";
 import { useTranslation } from 'react-i18next';
 
-const Home = () => {
+const Home = ({sticky}) => {
 
     const { t, i18n } = useTranslation()
     const changeLanguage = (lang) => {
@@ -16,7 +16,7 @@ const Home = () => {
 
 
     return (
-        <section className='home-section'>
+        <section className={`home-section ${sticky ? "active" : ""}`}>
             <div className="home-wrapper">
                 <div className="home-left"></div>
                 <div className="home-right"> <img src={homeImage} alt="homeImg" className='home-img' /></div>

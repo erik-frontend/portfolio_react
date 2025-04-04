@@ -3,12 +3,10 @@ import "./header.scss"
 import { Link } from 'react-scroll'
 import Logo from './Logo'
 import { useTranslation } from 'react-i18next'
-import 'react-sticky-header/styles.css';
-import StickyHeader from 'react-sticky-header';
 
-const Header = () => {
 
-    const [sticky, setSticky] = useState(false);
+const Header = ({sticky}) => {
+
 
     const [language, setLanguage] = useState("en")
 
@@ -21,16 +19,7 @@ const Header = () => {
         setLanguage(lang)
     }
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 1) setSticky(true)
-            else setSticky(false)
-        }
-
-
-        // window.addEventListener("scroll", handleScroll)
-        // return () => window.removeEventListener("scroll", handleScroll)
-    }, [])
+    
     console.log(window.pageYOffset);
 
     return (
