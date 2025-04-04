@@ -6,10 +6,10 @@
     height: 100vh;
     background: $gray-silver;
     position: relative;
-    overflow: hidden;
-    
+    // overflow: hidden;
 
-    
+
+
 
     .home-wrapper {
         display: flex;
@@ -68,5 +68,30 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .info {
+        background: linear-gradient(95deg, #1d1d1d 0%, #1d1d1d 100%, #1d1d1d 100%);
+        padding: 50px 105px;
+
+        &-title {
+            @include font("Montserrat-Bold", 700, 30px);
+            letter-spacing: 0.19em;
+            color: $white;
+        }
+
+        &-text {
+            @include font('OpenSans-Regular', 400, 15px);
+            line-height: 139%;
+            color: $white;
+            padding: 32px 0 26px;
+            width: 1148px;
+        }
+
+        &-btn {
+            @include font('Montserrat-SemiBold', 600, 15px);
+            padding: 0 21px;
+            color: $white;
+        }
     }
 }
