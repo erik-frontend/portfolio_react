@@ -6,9 +6,11 @@
     height: 100vh;
     background: $gray-silver;
     position: relative;
-    // overflow: hidden;
+    overflow: hidden;
 
-
+    @media(max-width: 1920px) {
+        height: 60vh;
+    }
 
 
     .home-wrapper {
@@ -70,35 +72,46 @@
         align-items: center;
     }
 
-    .info {
-        background: linear-gradient(95deg, #1d1d1d 0%, #1d1d1d 100%, #1d1d1d 100%);
-        padding: 50px 105px;
+
+}
+
+.info {
+    background: linear-gradient(95deg, #1d1d1d 0%, #1d1d1d 100%, #1d1d1d 100%);
+    color: $white;
+
+    .container {
+        max-width: 1758px;
+        padding: 50px 0;
+        background: url(./LogoInfo.png) no-repeat right top;
+
+        @media(max-width: 1800px){
+            padding: 50px 15px;
+        }
+    }
+
+    &-title {
+        @include font("Montserrat-Bold", 700, 30px);
+        letter-spacing: 0.19em;
+    }
+
+    &-text {
+        @include font('OpenSans-Regular', 400, 15px);
+        line-height: 139%;
+        padding: 32px 0 26px;
+        width: 1132px;
+    }
+
+    &-btn {
+        @include font('Montserrat-SemiBold', 600, 15px);
+        padding: 0 21px;
         color: $white;
+        border-left: 1px solid $white;
+        border-right: 1px solid $white;
+    }
 
-        &-title {
-            @include font("Montserrat-Bold", 700, 30px);
-            letter-spacing: 0.19em;
-        }
-
-        &-text {
-            @include font('OpenSans-Regular', 400, 15px);
-            line-height: 139%;
-            padding: 32px 0 26px;
-            width: 1132px;
-        }
-
-        &-btn {
-            @include font('Montserrat-SemiBold', 600, 15px);
-            padding: 0 21px;
-            color: $white;
-            border-left: 1px solid $white;
-            border-right: 1px solid $white;
-        }
-
-        &-logo {
-            position: absolute;
-            right: 20px;
-            bottom: -469px;
-        }
+    &-logo {
+        position: absolute;
+        right: 20px;
+        bottom: -469px;
     }
 }
