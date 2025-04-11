@@ -1,0 +1,31 @@
+@use "../../styles/varibles"as *;
+@use "../../styles/mixin"as *;
+
+.about {
+    text-align: center;
+    padding-top: 142px;
+    color: $black;
+
+    .section-title {
+        border: 8px solid $black;
+        margin: 0 auto;
+        width: 404px;
+        @include font('Montserrat-Bold', 700, 30px);
+        letter-spacing: 0.36em;
+    }
+
+    .text-explore {
+        @include font('Montserrat-SemiBold', 600, 15px);
+        padding: 0 20px;
+        border-right: 2px solid $black; // вопрос. Кому добавлять отступы если мы будет эти два блока использовать дальше но маловероятно тчо отступ будет таким же 
+        border-left: 2px solid;
+    }
+
+    &-subtitle {
+        @include font('OpenSans-Regular', 400, 15px);
+        padding: 71px 0 67px;
+        line-height: 139%;
+        width: 763px;
+        margin: 0 auto;
+    }
+}
