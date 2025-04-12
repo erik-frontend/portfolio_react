@@ -40,3 +40,40 @@ body {
         padding: 0 15px;
     }
 }
+
+.section-title {
+    border: 8px solid $black;
+    margin: 0 auto;
+    width: 404px;
+    @include font('Montserrat-Bold', 700, 30px);
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    height: 107px;
+    padding: 27px 0;
+    text-align: center
+}
+
+.text-explore {
+    @include font('Montserrat-SemiBold', 600, 15px);
+    border-right: 2px solid $black;
+    border-left: 2px solid $black;
+    padding: 6px 0;
+    display: block;
+    width: 139px;
+    height: 32px;
+    text-transform: uppercase;
+    text-align: center
+}
+
+.subtitle-text {
+    @include font('OpenSans-Regular', 400, 15px, 1.39);
+    max-width: 763px;
+    width: 100%;
+    text-align: center;
+}
+
+.separation {
+    width: 170px;
+    height: 12px;
+    margin: 0 auto;
+}

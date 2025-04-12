@@ -2,30 +2,40 @@
 @use "../../styles/mixin"as *;
 
 .about {
-    text-align: center;
     padding-top: 142px;
     color: $black;
 
-    .section-title {
-        border: 8px solid $black;
-        margin: 0 auto;
-        width: 404px;
-        @include font('Montserrat-Bold', 700, 30px);
-        letter-spacing: 0.36em;
-    }
-
     .text-explore {
-        @include font('Montserrat-SemiBold', 600, 15px);
-        padding: 0 20px;
-        border-right: 2px solid $black; // вопрос. Кому добавлять отступы если мы будет эти два блока использовать дальше но маловероятно тчо отступ будет таким же 
-        border-left: 2px solid;
+        margin: 67px auto 85px;
     }
 
-    &-subtitle {
-        @include font('OpenSans-Regular', 400, 15px);
-        padding: 71px 0 67px;
-        line-height: 139%;
-        width: 763px;
-        margin: 0 auto;
+    .subtitle-text {
+        margin: 70px auto 0;
+    }
+
+    &-services {
+        padding: 108px 0 80px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 67px;
+        justify-content: center;
+    }
+
+    .services-block {
+        max-width: 485px;
+        width: 100%;
+        padding: 20px 5px 20px 40px;
+
+        .title {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 22px;
+            letter-spacing: 0.19em;
+            margin-bottom: 20px;
+        }
+
+        .text {
+            @include font('OpenSans-Light', 300, 14px);
+        }
     }
 }

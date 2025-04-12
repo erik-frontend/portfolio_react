@@ -3,7 +3,7 @@ import { separation } from '../assets/img/images'
 
 const Separation = () => {
   return (
-    <div>
+    <div className='separation'>
         <img src={separation} alt="separ" />
     </div>
   )
