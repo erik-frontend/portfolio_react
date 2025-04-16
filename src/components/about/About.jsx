@@ -6,14 +6,14 @@ import { services } from '../../utils/dataSource'
 import "./about.scss"
 import SubtitleText from '../../utils/SubtitleText'
 
-const About = () => {
+const About = ({ t }) => {
   return (
     <section className='about'>
       <div className="container">
-        <SectionTitle title="about me"/>
+        <SectionTitle title="about me" />
         <SubtitleText>Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.</SubtitleText>
-        <Explore text="explore"/>
-        <Separation/>
+        <Explore text="explore" />
+        <Separation />
         <div className="about-services">
           {services.length ? (
             services.map((service, index) => (
@@ -26,6 +26,7 @@ const About = () => {
             <p>Services does not exist</p>
           )}
         </div>
+        <Separation />
       </div>
     </section>
   )

@@ -4,6 +4,7 @@ import Header from "./components/header/Header"
 import Home from "./components/home/Home"
 import About from "./components/about/About"
 import { useEffect, useState } from "react"
+import Skills from "./components/skills/Skills"
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
       <Header sticky={sticky}/>
       <Home sticky={sticky}/>
       <About/>
+      <Skills/>
     </>
   )
 }
