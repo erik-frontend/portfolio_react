@@ -5,23 +5,33 @@ import Separation from '../../utils/Separation'
 import { services } from '../../utils/dataSource'
 import "./about.scss"
 import SubtitleText from '../../utils/SubtitleText'
+import { useTranslation } from 'react-i18next';
 
-const About = ({ t }) => {
+
+const About = () => {
+
+  const { t } = useTranslation()
+
+
   return (
     <section className='about'>
       <div className="container">
-        <SectionTitle title="about me" />
-        <SubtitleText>Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.</SubtitleText>
+        <SectionTitle title={t("aboutMe.title")} />
+        <SubtitleText>{t("aboutMe.description")}</SubtitleText>
         <Explore text="explore" />
         <Separation />
         <div className="about-services">
           {services.length ? (
-            services.map((service, index) => (
-              <div className={`services-block bg-${service.class}`} key={index}>
-                <span className="title">{service.title}</span>
-                <p className="text">{service.description}</p>
-              </div>
-            ))
+            services.map((key, index) => {
+              console.log(t`(aboutMe.${key}.title)`);
+              
+              return (
+                <div className={`services-block bg-${key}`} key={index}>
+                  <span className="title">{t(`aboutMe.${key}.title`)}</span>
+                  <p className="text">{t(`aboutMe.${key}.description`)}</p>
+                </div>
+              )
+            })
           ) : (
             <p>Services does not exist</p>
           )}

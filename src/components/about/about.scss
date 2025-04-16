@@ -5,6 +5,18 @@
     padding-top: 142px;
     color: $black;
 
+    .bg-design {
+        background: url(../../assets/img/design.png) no-repeat left top;
+    }
+
+    .bg-development {
+        background: url(../../assets/img/development.png) no-repeat left top;
+    }
+
+    .bg-maintenance {
+        background: url(../../assets/img/maintanance.png) no-repeat left top;
+    }
+
     .text-explore {
         margin: 67px auto 85px;
     }
@@ -25,6 +37,7 @@
         max-width: 485px;
         width: 100%;
         padding: 20px 5px 20px 40px;
+
 
         .title {
             display: inline-block;
