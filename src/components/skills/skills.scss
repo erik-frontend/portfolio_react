@@ -1,3 +1,44 @@
+@use "../../styles/varibles" as *;
+@use "../../styles/mixin" as *;
+
+
 .skills {
     padding-top: 120px;
+
+    &-title {
+        margin: 75px 0;
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 0.19em;
+        color: $black;
+        text-transform: uppercase;
+    }
+
+
+    &-container {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 150px;
+        row-gap: 65px;
+        justify-content: center;
+
+        .img-title {
+            @include font("Montserrat-Regular", 24px, 400);
+            letter-spacing: 0.14em;
+            color: $black;
+        }
+    }
+
+    &-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 17px;
+    }
+
+    &-wrapper {
+        max-width: 919px;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
