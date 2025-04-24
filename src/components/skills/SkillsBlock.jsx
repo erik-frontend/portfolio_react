@@ -5,8 +5,8 @@ const SkillsBlock = ({icon}) => {
     return (
         <>
             <div className="skills-block">
-                <img src={icon.icon} alt="" className="skills-img" />
-                <span className='img-title'>{icon.name}</span>
+                <img src={icon} alt="" className="skills-img" />
+                <span className='img-title'>{name}</span>
             </div>
         </>
     )
