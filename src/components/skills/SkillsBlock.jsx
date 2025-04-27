@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SkillsBlock = ({icon}) => {
+const SkillsBlock = ({icon, name}) => {
     
     return (
         <>

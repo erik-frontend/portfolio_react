@@ -29,19 +29,19 @@ export const icons = [
         { icon: figma, name: "Figma" },
       ],
     },
-    // {
-    //   title: "LEARNING:",
-    //   icons: [
-    //     { icon: "your-icon-1", name: "Tech 1" },
-    //     { icon: "your-icon-2", name: "Tech 2" },
-    //   ],
-    // },
-    // {
-    //   title: "OTHER SKILLS:",
-    //   icons: [
-    //     { icon: "your-icon-3", name: "Skill 1" },
-    //     { icon: "your-icon-4", name: "Skill 2" },
-    //   ],
-    // },
-  ];
+  //   // {
+  //   //   title: "LEARNING:",
+  //   //   icons: [
+  //   //     { icon: "your-icon-1", name: "Tech 1" },
+  //   //     { icon: "your-icon-2", name: "Tech 2" },
+  //   //   ],
+  //   // },
+  //   // {
+  //   //   title: "OTHER SKILLS:",
+  //   //   icons: [
+  //   //     { icon: "your-icon-3", name: "Skill 1" },
+  //   //     { icon: "your-icon-4", name: "Skill 2" },
+  //   //   ],
+  //   // },
+ ];
   
