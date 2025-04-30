@@ -23,7 +23,6 @@ const About = () => {
         <div className="about-services">
           {services.length ? (
             services.map((key, index) => {
-              console.log(t`(aboutMe.${key}.title)`);
               
               return (
                 <div className={`services-block bg-${key}`} key={index}>

@@ -3,15 +3,10 @@
 
 
 .skills {
-    padding-top: 120px;
+    padding: 120px 0 160px;
 
-    &-title {
-        margin: 75px 0;
-        font-weight: 700;
-        font-size: 30px;
-        letter-spacing: 0.19em;
-        color: $black;
-        text-transform: uppercase;
+    .text-title {
+        margin: 79px 0 75px;
     }
 
 

@@ -20,7 +20,6 @@ const Header = ({sticky}) => {
     }
 
     
-    console.log(window.pageYOffset);
 
     return (
         <header className={`header ${sticky ? "fixed" : ""}`}>
