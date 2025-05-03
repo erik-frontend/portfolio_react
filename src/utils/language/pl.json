@@ -34,13 +34,13 @@
     "maintenance": {
       "title": "KONSERWACJA",
       "description": "W razie wszelkich problemów lub potrzeby zmian, mogę wprowadzić nowe funkcjonalności..."
-    },
-    "skills": {
-      "title": "UMIEJĘTNOŚCI",
-      "usingNow": "KORZYSTAM:",
-      "learning": "UCZĘ SIĘ:",
-      "other": "INNE:"
     }
+  },
+  "skills": {
+    "title": "UMIEJĘTNOŚCI",
+    "usingNow": "KORZYSTAM:",
+    "learning": "UCZĘ SIĘ:",
+    "other": "INNE:"
   },
   "portfolio": {
     "title": "PORTFOLIO",

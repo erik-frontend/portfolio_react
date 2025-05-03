@@ -5,6 +5,7 @@ import Home from "./components/home/Home"
 import About from "./components/about/About"
 import { useEffect, useState } from "react"
 import Skills from "./components/skills/Skills"
+import Portfolio from "./components/portfolio/Portfolio"
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
       <Home sticky={sticky}/>
       <About/>
       <Skills/>
+      <Portfolio/>
     </>
   )
 }

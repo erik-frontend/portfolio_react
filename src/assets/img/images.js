@@ -14,7 +14,9 @@ import eng from './engl.svg'
 import hisp from './hisp.svg'
 import cpp from './cpp.svg'
 import c from './c.svg'
-
+import portfolio1 from './partfolio1.png'
+import portfolio2 from './partfolio2.png'
+import portfolio3 from './partfolio3.png'
 
 export {
     separation,
@@ -33,4 +35,7 @@ export {
     hisp,
     cpp,
     c,
+    portfolio1,
+    portfolio2,
+    portfolio3,
 }
