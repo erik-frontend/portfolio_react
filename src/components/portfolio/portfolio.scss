@@ -1,0 +1,46 @@
+.portfolio {
+
+    &-top {
+        background: url(../../assets/img/portfoliobg.jpeg) no-repeat center;
+        padding: 107px 0;
+        position: relative;
+
+        &::after {
+            content: "";
+            background: rgba(0, 0, 0, 0.32);
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 0;
+            height: 100%;
+            z-index: 2;
+        }
+    }
+
+    &-filter {
+        padding: 32px 0 32px;
+        background: #1a1a1a;
+    }
+
+    .filter {
+        display: flex;
+        justify-content: center;
+        gap: 45px;
+        border-bottom: 1px solid #aaa;
+        max-width: 587px;
+        width: 100%;
+        margin: 0 auto;
+
+        &-btn {
+            font-weight: 600;
+            text-align: center;
+            color: #fffbfb;
+            width: 149px;
+            height: 48px;
+
+            &.active {
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+}

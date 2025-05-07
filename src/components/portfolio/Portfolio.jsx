@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import SectionTitle from '../../utils/SectionTitle'
 import FilterBar from './FilterBar'
 import PortfolioCard from './PortfolioCard'
+import "./portfolio.scss"
 
 const Portfolio = () => {
 
