@@ -1,7 +1,6 @@
 import React from 'react'
-import { portfolioItems } from '../../utils/dataSource'
 
-const PortfolioCard = () => {
+const PortfolioCard = ({portfolioItems, filterItems}) => {
     return (
         <>
             {portfolioItems.map(item => (

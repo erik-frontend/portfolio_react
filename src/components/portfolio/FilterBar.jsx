@@ -1,14 +1,11 @@
 import React, { useState } from 'react'
 import { catigories } from '../../utils/dataSource'
 
-const FilterBar = () => {
+const FilterBar = ({handleActive, active}) => {
 
-const [active, setIsActive] = useState(catigories[0]?.key ?? '')
 // console.log(active);
 
-  const handleActive = (key) => {
-    setIsActive(key)
-  }
+  
 
   return (
     <div className='filter'>

@@ -30,6 +30,10 @@
         background: $black;
         clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0 100%);
 
+        @media(max-width: 1150px) {
+            display: none;
+        }
+
     }
 
     .home-content {
@@ -38,6 +42,14 @@
         transform: translateY(-50%);
         left: 0;
         width: 100%;
+
+        @media(max-width: 1150px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     }
 
     .title {
@@ -96,9 +108,10 @@
 
     &-text {
         @include font('OpenSans-Regular', 400, 15px);
-        line-height: 139%;
+        line-height: 1.39;
         padding: 32px 0 26px;
-        width: 1132px;
+        max-width: 1132px;
+        width: 100%;
     }
 
     &-btn {
