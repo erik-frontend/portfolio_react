@@ -3,7 +3,7 @@ import { portfolio1, portfolio2, portfolio3 } from "../assets/img/images";
 export const services = ["design", "development", "maintenance"];
 
 
-export const catigories = [
+export const categories = [
     { key: "all", label: "All" },
     { key: "coded", label: "Coded" },
     { key: "designed", label: "Designed" },

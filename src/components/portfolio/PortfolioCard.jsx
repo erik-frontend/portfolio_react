@@ -1,9 +1,7 @@
-import React from 'react'
-
-const PortfolioCard = ({portfolioItems, filterItems}) => {
+const PortfolioCard = ({items}) => {
     return (
         <>
-            {portfolioItems.map(item => (
+            {items.map(item => (
                 <div className='portfolio-card' key={item.id}>
                     <img src={item.image} alt={item.title} />
                     <div className="portfolio-card-text">
