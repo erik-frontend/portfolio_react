@@ -6,6 +6,7 @@ import About from "./components/about/About"
 import { useEffect, useState } from "react"
 import Skills from "./components/skills/Skills"
 import Portfolio from "./components/portfolio/Portfolio"
+import Contact from "./components/contact/Contact"
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
       <About/>
       <Skills/>
       <Portfolio/>
+      <Contact/>
     </>
   )
 }

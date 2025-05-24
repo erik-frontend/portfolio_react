@@ -22,8 +22,10 @@ const PortfolioCard = ({ items, classActive }) => {
                     <div className="portfolio-card-text">
                         <h3>{item.title}</h3>
                         <p>{item.subtitle}</p>
-                        <a href="">DEMO</a>
-                        <a href="">GIT</a>
+                        <div className="portfolio-demo">
+                            <a href="">DEMO</a>
+                            <a href="">GIT</a>
+                        </div>
                     </div>
                 </motion.div>
             ))}

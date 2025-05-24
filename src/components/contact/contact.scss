@@ -1,0 +1,10 @@
+@use "../../styles/varibles"as *;
+@use "../../styles/mixin"as *;
+
+.contact {
+    padding: 140px 0 70px;
+
+    .subtitle-text {
+        margin: 60px auto 30px;
+    }
+}
