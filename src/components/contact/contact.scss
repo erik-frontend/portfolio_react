@@ -7,4 +7,51 @@
     .subtitle-text {
         margin: 60px auto 30px;
     }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 610px;
+        width: 100%;
+        margin: 122px auto 0;
+        gap: 53px;
+        @include font("Montserrat-Bold", 700, 16px, 1);
+        letter-spacing: 0.04em;
+
+        input,
+        textarea {
+            padding: 16px 14px;
+            border: none;
+            outline: none;
+            border-left: 5px solid $black;
+            border-bottom: 5px solid $black;
+            color: $gray-300;
+            background: none;
+            transition: .3s linear;
+            width: 100%;
+            font: inherit;
+
+            &:focus {
+                border-left-color: $blue-navy;
+                border-bottom-color: $blue-navy;
+            }
+        }
+
+        textarea {
+            height: 185px;
+            resize: none;
+        }
+
+        &-btn {
+            width: 200px;
+            border-left: 3px solid $black;
+            border-right: 3px solid $black;
+            padding: 12px 0;
+            margin: 9px auto 0;
+            text-align: center;
+            color: $black;
+            font: inherit;
+
+        }
+    }
 }

@@ -4,6 +4,7 @@ import SectionTitle from '../../utils/SectionTitle'
 import { useTranslation } from 'react-i18next';
 import SubtitleText from '../../utils/SubtitleText';
 import Separation from '../../utils/Separation';
+import ContactForm from './ContactForm';
 
 const Contact = () => {
 
@@ -14,6 +15,7 @@ const Contact = () => {
         <SectionTitle title={t("contact.title")} />
         <SubtitleText>{t("contact.description")}</SubtitleText>
         <Separation />
+        <ContactForm/>
     </section>
   )
 }
