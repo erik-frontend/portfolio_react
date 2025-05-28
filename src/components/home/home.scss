@@ -8,6 +8,11 @@
     position: relative;
     overflow: hidden;
 
+    .social-link {
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+         background: $gray-200;
+    }
+
     @media(max-width: 1920px) {
         height: 60vh;
     }
@@ -68,22 +73,7 @@
         display: block;
     }
 
-    .home-social {
-        display: flex;
-        gap: 30px;
-    }
-
-    .home-social-link {
-        width: 61px;
-        height: 56px;
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-        background: $gray-200;
-        font-size: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
+   
 
 }
 

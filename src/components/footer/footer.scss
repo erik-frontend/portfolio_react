@@ -1,0 +1,37 @@
+@use "../../styles/varibles"as *;
+@use "../../styles/mixin"as *;
+
+.footer {
+    background: $dark-gray;
+    padding: 70px 0;
+    color: $white;
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 44px;
+    }
+
+    &-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        @include font("Montserrat-Bold", 700, 15px, 1);
+        letter-spacing: 0.19em;
+        color: $white;
+    }
+
+    &-icon {
+        font-size: 25px;
+    }
+
+    &-copyright {
+        @include font("Nunito-Bold", 700, 18px, 1);
+
+        span {
+            @include font("Nunito-Regular", 400, 18px, 1);
+        }
+    }
+}

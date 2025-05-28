@@ -1,0 +1,16 @@
+ @use "../../styles/varibles"as *;
+ @use "../../styles/mixin"as *;
+
+ .social {
+     display: flex;
+     gap: 30px;
+
+     &-link {
+         width: 61px;
+         height: 56px;
+         font-size: 35px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+ }

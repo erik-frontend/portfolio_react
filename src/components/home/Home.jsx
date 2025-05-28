@@ -6,6 +6,7 @@ import "./home.scss"
 import homeImage from "../../assets/img/HomeImage.png";
 import { useTranslation } from 'react-i18next';
 import Info from './Info';
+import Social from '../social/Social';
 
 const Home = ({ sticky }) => {
 
@@ -22,17 +23,7 @@ const Home = ({ sticky }) => {
                             <h2 className='title'>{t("home.title")}</h2>
                             <h1 className='name-title'>{t("home.name")}</h1>
                             <span className='subTitle'>{t("home.subtitle")}</span>
-                            <div className="home-social">
-                                <a href="" className="home-social-link">
-                                    <IoIosAt />
-                                </a>
-                                <a href="" className="home-social-link">
-                                    <GrGithub />
-                                </a>
-                                <a href="" className="home-social-link">
-                                    <TbBrandLinkedinFilled />
-                                </a>
-                            </div>
+                            <Social/>
                         </div>
                     </div>
                 </div>
