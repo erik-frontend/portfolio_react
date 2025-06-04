@@ -24,7 +24,7 @@ const Portfolio = () => {
         setClassActive(!classActive)
     };
 
-    console.log(classActive);
+    // console.log(classActive);
 
 
     const { t } = useTranslation()
