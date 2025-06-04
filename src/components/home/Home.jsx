@@ -1,7 +1,3 @@
-import React from 'react'
-import { IoIosAt } from "react-icons/io";
-import { GrGithub } from "react-icons/gr";
-import { TbBrandLinkedinFilled } from "react-icons/tb";
 import "./home.scss"
 import homeImage from "../../assets/img/HomeImage.png";
 import { useTranslation } from 'react-i18next';

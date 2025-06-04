@@ -43,7 +43,7 @@ const Portfolio = () => {
                     <PortfolioCard items={filteredItems} classActive={classActive} />
                 </AnimatePresence>
             </div>
-            <span className="portfolio-more">And many more to come!</span>
+            <span className="portfolio-more">{t("portfolio.moreToCome")}</span>
         </section>
     )
 }

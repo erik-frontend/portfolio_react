@@ -1,6 +1,10 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next";
+
 
 const PortfolioCard = ({ items, classActive }) => {
+
+        const { t } = useTranslation()
 
     const cardAnim = {
         initial: { opacity: 0, scale: 0.9 },
@@ -20,8 +24,8 @@ const PortfolioCard = ({ items, classActive }) => {
                 >
                     <img src={item.image} alt={item.title} />
                     <div className="portfolio-card-text">
-                        <h3>{item.title}</h3>
-                        <p>{item.subtitle}</p>
+                        <h3>{t("portfolio.title")}</h3>
+                        <p>{t("portfolio.eatsome.description")}</p>
                         <div className="portfolio-demo">
                             <a href="">DEMO</a>
                             <a href="">GIT</a>
