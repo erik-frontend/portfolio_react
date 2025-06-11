@@ -3,10 +3,12 @@ import "./header.scss"
 import { Link } from 'react-scroll'
 import Logo from './Logo'
 import { useTranslation } from 'react-i18next'
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoCloseSharp } from "react-icons/io5";
 
+const Header = ({ sticky }) => {
 
-const Header = ({sticky}) => {
-
+    const [isActive, setIsActive] = useState(false)
 
     const [language, setLanguage] = useState("en")
 
@@ -19,13 +21,15 @@ const Header = ({sticky}) => {
         setLanguage(lang)
     }
 
-    
+    const handleActive = () => {
+        setIsActive(!isActive)
+    }
 
     return (
         <header className={`header ${sticky ? "fixed" : ""}`}>
             <div className="container">
                 <Logo />
-                <nav className='nav'>
+                <nav className={`nav ${isActive ? "active" : ""}`}>
                     <ul className="menu">
                         <li className="item">
                             <Link to='about' {...LinkParams}>{t("navigation.about")}</Link>
@@ -45,6 +49,9 @@ const Header = ({sticky}) => {
                         <button className={`${language === "pl" ? "active" : ""}`} onClick={() => changeLanguage("pl")}>pl</button>
                     </div>
                 </nav>
+                <div className="burger" onClick={handleActive}>
+                    {isActive ? <IoCloseSharp /> : <RxHamburgerMenu />}
+                </div>
             </div>
         </header>
     )

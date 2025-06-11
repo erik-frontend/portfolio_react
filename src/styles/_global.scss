@@ -26,10 +26,15 @@ img {
     object-fit: cover;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     @include font('Montserrat-Bold', 700, 17px);
     color: $black;
     background: $light-gray;
+    overflow-x: hidden;
 }
 
 .container {
