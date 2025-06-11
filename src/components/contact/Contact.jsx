@@ -8,14 +8,16 @@ import ContactForm from './ContactForm';
 
 const Contact = () => {
 
-      const { t } = useTranslation()
-    
+  const { t } = useTranslation()
+
   return (
     <section className='contact'>
+      <div className="container">
         <SectionTitle title={t("contact.title")} />
         <SubtitleText>{t("contact.description")}</SubtitleText>
         <Separation />
-        <ContactForm/>
+      </div>
+      <ContactForm />
     </section>
   )
 }
