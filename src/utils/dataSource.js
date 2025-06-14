@@ -54,3 +54,10 @@ export const portfolioItems = [
         image: portfolio1,
     },
 ]
+
+export const menuItems = [
+  { id: "about", link: "about" },
+  { id: "skills", link: "skills" },
+  { id: "portfolio", link: "portfolio" },
+  { id: "contact", link: "contact" }
+];

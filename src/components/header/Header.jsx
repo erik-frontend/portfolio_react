@@ -5,10 +5,13 @@ import Logo from './Logo'
 import { useTranslation } from 'react-i18next'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseSharp } from "react-icons/io5";
+import { menuItems } from '../../utils/dataSource'
 
 const Header = ({ sticky }) => {
 
     const [isActive, setIsActive] = useState(false)
+
+    const [activeLink, setActiveLink] = useState("")
 
     const [language, setLanguage] = useState("en")
 
@@ -25,24 +28,27 @@ const Header = ({ sticky }) => {
         setIsActive(!isActive)
     }
 
+    const handleActiveLink = (id) => {
+        setActiveLink(id)
+        setIsActive(!isActive)
+    }
+
     return (
         <header className={`header ${sticky ? "fixed" : ""}`}>
             <div className="container">
                 <Logo />
                 <nav className={`nav ${isActive ? "active" : ""}`}>
                     <ul className="menu">
-                        <li className="item">
-                            <Link to='about' {...LinkParams}>{t("navigation.about")}</Link>
-                        </li>
-                        <li className="item">
-                            <Link to='skills' {...LinkParams}>{t("navigation.skills")}</Link>
-                        </li>
-                        <li className="item">
-                            <Link to='portfolio' {...LinkParams}>{t("navigation.portfolio")}</Link>
-                        </li>
-                        <li className="item">
-                            <Link to='contact' {...LinkParams}>{t("navigation.contact")}</Link>
-                        </li>
+                        {menuItems.length && (
+                            menuItems.map(item => (
+                                <li className="item" key={item.id}>
+                                    <Link to={item.id} {...LinkParams}
+                                        onClick={() => handleActiveLink(item.id)}
+                                        className={`${item.id === activeLink ? "active" : ""}`}
+                                    >{t(`navigation.${item.link}`)}</Link>
+                                </li>
+                            ))
+                        )}
                     </ul>
                     <div className="language-switcher">
                         <button className={`${language === "en" ? "active" : ""}`} onClick={() => changeLanguage("en")}>en</button>
