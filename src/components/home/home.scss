@@ -85,6 +85,10 @@
         color: $gray-500;
         margin-bottom: 125px;
         display: block;
+
+        @media(max-width: 1150px){
+            text-align: center;
+        }
     }
 
 

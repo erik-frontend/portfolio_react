@@ -9,15 +9,17 @@ import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
 
-    const {t} = useTranslation()
+    const { t } = useTranslation()
 
-    
+
 
     return (
         <>
             <section className="skills">
                 <div className="skills-wrapper">
-                    <SectionTitle title="skills" />
+                    <div className="container">
+                        <SectionTitle title="skills" />
+                    </div>
                     <TextTitle title={t("skills.usingNow")} />
                     <SkillsWrapper icons={icons} />
                     <TextTitle title={t("skills.title")} />

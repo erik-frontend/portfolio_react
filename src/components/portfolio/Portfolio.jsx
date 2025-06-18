@@ -32,7 +32,9 @@ const Portfolio = () => {
     return (
         <section className='portfolio'>
             <div className="portfolio-top">
-                <SectionTitle title="PORTFOLIO" />
+                <div className="container">
+                    <SectionTitle title="PORTFOLIO" />
+                </div>
             </div>
             <div className="portfolio-filter">
                 <FilterBar onCategoryChange={handleCategoryChange}

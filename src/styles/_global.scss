@@ -50,7 +50,8 @@ body {
 .section-title {
     border: 8px solid $black;
     margin: 0 auto;
-    width: 404px;
+    max-width: 404px;
+    width: 100%;
     @include font('Montserrat-Bold', 700, 30px);
     letter-spacing: 0.36em;
     text-transform: uppercase;

@@ -29,6 +29,7 @@
 
     &-copyright {
         @include font("Nunito-Bold", 700, 18px, 1);
+        text-align: center;
 
         span {
             @include font("Nunito-Regular", 400, 18px, 1);
